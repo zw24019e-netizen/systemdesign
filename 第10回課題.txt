@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+
+actor 学生
+
+学生 --> (ログイン)
+学生 --> (講義資料を見る)
+学生 --> (課題を提出する)
+学生 --> (お知らせを確認する)
+
+@enduml
