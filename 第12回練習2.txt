@@ -1,0 +1,19 @@
+@startuml
+participant "Main Function" as Main
+participant "calculate()" as Calc
+participant "getInput()" as Input
+
+Main -> Calc : calculate()
+activate Calc
+
+Calc -> Input : getInput()
+activate Input
+
+Input --> Calc : 入力データ
+deactivate Input
+
+Calc --> Main : 計算結果
+deactivate Calc
+
+Main -> Main : 結果を出力
+@enduml
