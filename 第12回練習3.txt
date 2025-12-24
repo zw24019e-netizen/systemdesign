@@ -1,0 +1,8 @@
+@startuml
+[*] --> OFF
+OFF --> ON : スイッチON
+OFF --> ON : 周囲が暗くなる
+ON --> OFF : スイッチOFF
+ON --> OFF : タイマー満了
+ON --> OFF : 周囲が明るくなる
+@enduml
